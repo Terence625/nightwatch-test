@@ -27,6 +27,8 @@ module.exports = {
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-plugins.html
   plugins: [],
+
+  abortOnElementLocateError: true,
   
   // See https://nightwatchjs.org/guide/concepts/test-globals.html
   globals_path: '',
