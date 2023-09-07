@@ -18,6 +18,7 @@ async function run() {
   const browser = await client.launchBrowser();
   await browser.url("https://www.google.com");
   await browser.click("#non-existing-element");
+  await browser.error()
   await browser.url("https://www.google.com");
   console.log("test finished successfully");
   await browser.quit();
